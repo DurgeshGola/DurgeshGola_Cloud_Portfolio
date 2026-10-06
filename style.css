@@ -4649,6 +4649,52 @@ footer::before {
     }
 }
 
+body:not(.dark) .focus {
+    background: linear-gradient(135deg, rgba(16, 27, 45, 0.98), rgba(25, 32, 58, 0.98), rgba(27, 24, 48, 0.98));
+}
+
+body:not(.dark) .skills {
+    background: linear-gradient(180deg, rgba(10, 32, 40, 0.98), rgba(16, 46, 52, 0.98));
+}
+
+body:not(.dark) .focus-card {
+    background: linear-gradient(180deg, #121a2f, #0b1120);
+    border-color: rgba(103, 232, 249, 0.2);
+}
+
+body:not(.dark) .focus-card h3,
+body:not(.dark) .focus-card p,
+body:not(.dark) .ability-summary h3,
+body:not(.dark) .skill-card h3 {
+    color: #edf2ff;
+}
+
+body:not(.dark) .ability-summary {
+    background: linear-gradient(135deg, rgba(124, 92, 255, 0.18), rgba(18, 24, 38, 0.96));
+    border-color: rgba(168, 85, 247, 0.24);
+}
+
+body:not(.dark) .ability-badge,
+body:not(.dark) .ability-metrics div {
+    background: rgba(15, 23, 42, 0.7);
+    border-color: rgba(168, 85, 247, 0.22);
+}
+
+body:not(.dark) .ability-summary p,
+body:not(.dark) .ability-metrics span,
+body:not(.dark) .progress-info {
+    color: rgba(226, 232, 240, 0.8);
+}
+
+body:not(.dark) .ability-metrics strong {
+    color: #a5f3fc;
+}
+
+body:not(.dark) .skill-card {
+    background: linear-gradient(145deg, rgba(16, 35, 44, 0.98), rgba(11, 26, 42, 0.98));
+    border-color: rgba(168, 85, 247, 0.24);
+}
+
 @media (prefers-reduced-motion: reduce) {
     .footer-topline::after {
         animation: none;
@@ -5412,5 +5458,123 @@ body {
     .nav-cta,
     #menu-toggle {
         transition: none;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 72px 5%;
+    }
+
+    .home {
+        min-height: 100svh;
+        padding-top: 96px;
+        padding-bottom: 56px;
+    }
+
+    .home-container {
+        gap: 36px;
+    }
+
+    .home h1 {
+        font-size: clamp(2.35rem, 10vw, 3rem);
+        line-height: 1.12;
+    }
+
+    .home h2 {
+        font-size: clamp(1.2rem, 5.5vw, 1.5rem);
+        line-height: 1.4;
+    }
+
+    .home-description,
+    .section-header p,
+    .about-content > p,
+    .journey-summary p,
+    .timeline-content p,
+    .project-content p,
+    .contact-info > p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .section-header {
+        margin-bottom: 38px;
+    }
+
+    .section-header h2,
+    .about .section-header h2,
+    .projects .section-header h2 {
+        font-size: clamp(2rem, 8vw, 2.7rem);
+        line-height: 1.15;
+    }
+
+    .section-header > span,
+    .about .section-header > span,
+    .projects .section-header > span {
+        font-size: 0.75rem;
+        letter-spacing: 0.14em;
+    }
+
+    .availability-badge {
+        justify-content: center;
+        max-width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .quick-badges span,
+    .about-tags span,
+    .project-tech span {
+        font-size: 0.82rem;
+    }
+
+    .feature-item {
+        padding: 15px;
+    }
+
+    .btn {
+        min-height: 48px;
+        font-size: 1rem;
+    }
+
+    .project-content {
+        padding: 22px 20px;
+    }
+
+    .project-kicker,
+    .certificate-type {
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+    }
+
+    .certificate-meta {
+        font-size: 0.82rem;
+    }
+
+    .certificate-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .certificate-link,
+    .project-link,
+    .footer-nav a,
+    .footer-brand p,
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    #scroll-top {
+        right: 16px;
+        bottom: 16px;
+        width: 46px;
+        height: 46px;
     }
 }
